@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos</title>
+    <style>
+        .container{
+            max-width: 350px;
+            border: 2px solid black;
+            display: flex;
+        }
+        .items{
+            background-color: blueviolet;
+            margin: 5px;
+            color: antiquewhite;
+            text-align: center;
+            flex: 1;
+        }
+
+        .center{
+            align-items: center;
+        }
+        .stretch{
+            align-items: stretch;
+        }
+        .start{
+            align-items: flex-start;
+        }
+        .end{
+            align-items: flex-end;
+        }
+        .baseline{
+            align-items: baseline;
+        }
+        .column{
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <h3>Align-items - Center</h3>
+    <section class="container center">
+        <div class="items">Item 1</div>
+        <div class="items">Lorem ipsum dolor sit amet</div>
+        <div class="items">item 3</div>
+    </section>
+
+    <h3>Align-items - stretch</h3>
+    <section class="container stretch">
+        <div class="items">Item 1</div>
+        <div class="items">Lorem ipsum dolor sit amet</div>
+        <div class="items">Cresce de acordo com o conteudo, os demais acompanha
+            o crescimento dessa linha.
+        </div>
+    </section>
+
+    <h3>Align-items - start</h3>
+    <section class="container start">
+        <div class="items">Item 1</div>
+        <div class="items">Lorem ipsum dolor sit amet</div>
+        <div class="items">Alinhado a cima</div>
+    </section>
+
+    <h3>Align-items - end</h3>
+    <section class="container end">
+        <div class="items">Item 1</div>
+        <div class="items">Lorem ipsum dolor sit amet</div>
+        <div class="items">Alinhado a baixo</div>
+    </section>
+
+    <h3>Align-items - baseline</h3>
+    <section class="container baseline">
+        <div class="items"> <br> Item 1</div>
+        <div class="items">Lorem ipsum dolor sit amet</div>
+        <div class="items">item 3 Linha base, alinhado ao container.</div>
+    </section>
+
+    <h1>Column</h1>
+
+    <h3>Align-items - Center</h3>
+    <section class="container center column">
+        <div class="items">Item 1</div>
+        <div class="items">Lorem ipsum dolor sit amet</div>
+        <div class="items">item 3</div>
+    </section>
+
+    <h3>Align-items - stretch</h3>
+    <section class="container stretch column">
+        <div class="items">Item 1</div>
+        <div class="items">Lorem ipsum dolor sit amet</div>
+        <div class="items">Cresce de acordo com o conteudo, os demais acompanha
+            o crescimento dessa linha.
+        </div>
+    </section>
+
+    <h3>Align-items - start</h3>
+    <section class="container start column">
+        <div class="items">Item 1</div>
+        <div class="items">Lorem ipsum dolor sit amet</div>
+        <div class="items">Alinhado a cima</div>
+    </section>
+
+    <h3>Align-items - end</h3>
+    <section class="container end column">
+        <div class="items">Item 1</div>
+        <div class="items">Lorem ipsum dolor sit amet</div>
+        <div class="items">Alinhado a baixo</div>
+    </section>
+
+    <h3>Align-items - baseline</h3>
+    <section class="container baseline column">
+        <div class="items"> <br> Item 1</div>
+        <div class="items">Lorem ipsum dolor sit amet</div>
+        <div class="items">item 3 Linha base, alinhado ao container.</div>
+    </section>
+
+
+    <!--
+        Align-items
+            > Trata do alinhamento dos flex itens de acordo com o eixo do container.
+            > O alinhamento é diferente para quando os itens estão em colunas ou linhas.
+            > Permite o alinhamento central no eixo vertical.
+        Tipos de alinhamentos
+            >Center: alinhamento dos itens no centro
+            >stretch:padrão, e os flex itens cresçam igualmente
+            >flex-start: alinhamento dos itens no início
+            >flex-end: alinhamento do itens no final
+            >baseline: alinhamento de acordo com a linha base da tipografia dos itens
+        -->
+    
+</body>
+</html>
